@@ -7,6 +7,12 @@ import java.util.Set;
 
 import com.joepritzel.cis269.assignment1.repo.AccountRepo;
 
+/**
+ * This is an account aggregate that uses a map.
+ * 
+ * @author Joe Pritzel
+ * 
+ */
 public class MappedAccountAggregate extends AccountAggregate {
 
 	/**
@@ -16,7 +22,6 @@ public class MappedAccountAggregate extends AccountAggregate {
 
 	public MappedAccountAggregate(AccountRepo repo) throws IOException {
 		super(repo);
-		repo.read(this);
 	}
 
 	@Override

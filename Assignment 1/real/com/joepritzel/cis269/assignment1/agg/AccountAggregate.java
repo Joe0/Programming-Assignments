@@ -29,6 +29,7 @@ public abstract class AccountAggregate {
 	 */
 	public AccountAggregate(AccountRepo repo) throws IOException {
 		this.repo = repo;
+		repo.read(this);
 	}
 
 	/**
